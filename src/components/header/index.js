@@ -6,8 +6,6 @@ import * as styles from './styles'
 const Header = () => {
   const { data } = useSession()
 
-  console.log(data)
-
   const renderAvatar = () => {
     if (!data.user.image) return false
     return  <img css={styles.avatar} src={data.user.image} />
