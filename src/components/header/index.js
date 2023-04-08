@@ -1,5 +1,5 @@
-"use client";
 import { signIn, signOut, useSession } from 'next-auth/react'
+import Image from 'next/image';
 
 import * as styles from './styles'
 
@@ -8,7 +8,15 @@ const Header = () => {
 
   const renderAvatar = () => {
     if (!data.user.image) return false
-    return  <img css={styles.avatar} src={data.user.image} />
+    return  (
+      <Image 
+        alt="user's avatar"
+        css={styles.avatar} 
+        src={data.user.image}
+        width="50"
+        height="50"
+      />
+    )
   }
 
   const renderContent = () => {
