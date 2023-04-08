@@ -1,14 +1,15 @@
 {
-  "name": "nextjs-auth",
+  "name": "next-js-auth",
   "version": "1.0.0",
   "private": true,
-  "description": "An example NextJS app using NextAuth.js and MongoDB for authentication.",
+  "description": "NextJS Auth Starter",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start --port ${PORT-3000}"
+    "start": "next start --port ${PORT-3000}",
+    "lint": "next lint"
   },
-  "author": "Faraz Patankar",
+  "author": "George Park",
   "dependencies": {
     "@emotion/babel-plugin": "^11.10.6",
     "@emotion/babel-preset-css-prop": "^11.10.0",
@@ -18,5 +19,9 @@
     "next-auth": "^4.21.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0"
   }
 }
